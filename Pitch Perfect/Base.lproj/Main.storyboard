@@ -17,23 +17,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUa-s3-pV9">
-                                <rect key="frame" x="282" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUa-s3-pV9">
+                                <rect key="frame" x="255" y="250" width="100" height="100"/>
+                                <state key="normal" image="Microphone"/>
                                 <connections>
-                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pvu-jY-Dqg"/>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jd-dE-Ibj"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="recording" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-Sh-n4q">
+                                <rect key="frame" x="273" y="374" width="74" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.19824979213612651" green="0.24325710799265293" blue="0.75564463350785338" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Sn-JK-8bj">
+                                <rect key="frame" x="260" y="480" width="100" height="100"/>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZWZ-Bf-cQc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="T0u-Sh-n4q" firstAttribute="top" secondItem="YUa-s3-pV9" secondAttribute="bottom" constant="24" id="BiZ-pX-jAv"/>
                             <constraint firstItem="YUa-s3-pV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HtH-jl-mC7"/>
+                            <constraint firstItem="T0u-Sh-n4q" firstAttribute="centerX" secondItem="YUa-s3-pV9" secondAttribute="centerX" id="JXw-ff-TkV"/>
+                            <constraint firstItem="6Sn-JK-8bj" firstAttribute="centerX" secondItem="YUa-s3-pV9" secondAttribute="centerX" id="OCd-Yc-qS4"/>
+                            <constraint firstItem="6Sn-JK-8bj" firstAttribute="top" secondItem="YUa-s3-pV9" secondAttribute="bottom" constant="130" id="eNE-qA-2d6"/>
                             <constraint firstItem="YUa-s3-pV9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFR-KO-1WS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="T0u-Sh-n4q" id="WPz-Xs-KP2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Microphone" width="100" height="100"/>
+        <image name="Stop" width="100" height="100"/>
+    </resources>
 </document>
