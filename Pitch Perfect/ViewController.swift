@@ -21,5 +21,8 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func buttonTapped(sender: AnyObject) {
+        print("button tapped")
+    }
 }
 
