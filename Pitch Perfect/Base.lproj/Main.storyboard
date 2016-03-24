@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -44,7 +44,7 @@
                             <constraint firstItem="YUa-s3-pV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HtH-jl-mC7"/>
                             <constraint firstItem="T0u-Sh-n4q" firstAttribute="centerX" secondItem="YUa-s3-pV9" secondAttribute="centerX" id="JXw-ff-TkV"/>
                             <constraint firstItem="6Sn-JK-8bj" firstAttribute="centerX" secondItem="YUa-s3-pV9" secondAttribute="centerX" id="OCd-Yc-qS4"/>
-                            <constraint firstItem="6Sn-JK-8bj" firstAttribute="top" secondItem="YUa-s3-pV9" secondAttribute="bottom" constant="130" id="eNE-qA-2d6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6Sn-JK-8bj" secondAttribute="bottom" constant="20" id="URV-MS-GAS"/>
                             <constraint firstItem="YUa-s3-pV9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFR-KO-1WS"/>
                         </constraints>
                     </view>
